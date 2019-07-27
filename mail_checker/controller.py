@@ -1,8 +1,8 @@
-from mail_checker.mail_checker_model import MailChecker
+from mail_checker.model import MailCheckerModel
 
 class MailCheckerController:
     def __init__(self):
-        self.model = MailChecker()
+        self.model = MailCheckerModel()
     @staticmethod
     def print_menu():
         print('0.  종료')
@@ -20,7 +20,7 @@ class MailCheckerController:
             if menu == 0:
                 break
             elif menu == 1 :
-                self.model.down_eng_dictionary()
+                model.down_eng_dictionary()
             elif menu == 2:
                 emails_test = [
                     '''Subject: flat screens
